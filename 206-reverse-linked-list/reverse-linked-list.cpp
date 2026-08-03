@@ -5,12 +5,12 @@ public:
         ListNode* curr = head;
 
         while (curr != nullptr) {
-            ListNode* nextNode = curr->next; // save next
-            curr->next = prev;              // reverse pointer
-            prev = curr;                    // move prev forward
-            curr = nextNode;               // move curr forward
+            ListNode* nextNode = curr->next; 
+            curr->next = prev;           
+            prev = curr;                  
+            curr = nextNode;              
         }
 
-        return prev; // new head of reversed list
+        return prev; 
     }
 };
